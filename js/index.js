@@ -122,20 +122,16 @@ footer.textContent = siteContent.footer["copyright"];
 
 // task 4 - add elements to nav bar 
 
-let nav7 = document.createElement("a")
-nav7text = document.createTextNode("Blog"); 
-
-nav7 = nav7.appendChild(nav7text); 
+let nav7 = document.createElement("a"); 
+nav7.textContent = "Blog";  
 
 let nav = document.getElementsByTagName("nav")[0];
 
 nav.appendChild(nav7); 
 
 let nav8 = document.createElement("a"); 
-let nav8text = document.createTextNode("Careers"); 
-let nav8Link = nav8.appendChild(nav8text); 
-
-nav.prepend(nav8Link); 
+nav8.textContent = "Careers";
+nav.prepend(nav8); 
 
 
 
