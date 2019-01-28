@@ -71,8 +71,11 @@ nav6.textContent = siteContent.nav["nav-item-6"];
 
 let topSectionH1 = document.querySelector(".cta .cta-text h1").textContent = siteContent.cta["h1"];
 
+let topSectionButton = document.querySelector(".cta .cta-text button").textContent = siteContent.cta["button"];
 
-// main content 
+let topSectionImg = document.getElementById("cta-img").setAttribute("src", siteContent.cta["img-src"]);
+
+// main content text
 
 let featureH4 = document.querySelectorAll(".text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
 
@@ -92,7 +95,11 @@ let productTextContent = document.querySelectorAll(".text-content p")[3].textCon
 
 let visionH4 = document.querySelectorAll(".text-content h4")[4].textContent = siteContent["main-content"]["vision-h4"];
 
-let visionTextContent = document.querySelectorAll(".text-content p")[4].textContent = siteContent["main-content"]["vision-content"];
+let visionTextContent = document.querySelectorAll(".text-content p")[4].textContent = siteContent["main-content"]["vision-content"]; 
+
+// main content img 
+
+let mainImg = document.getElementById("middle-img").setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 // contact section 
 let contactHeader = document.querySelector(".contact h4");
@@ -109,3 +116,31 @@ let contactEmail = document.querySelectorAll(".contact p")[2].textContent = site
 let footer = document.querySelector("footer p");
 
 footer.textContent = siteContent.footer["copyright"];
+
+
+
+
+// task 4 - add elements to nav bar 
+
+let nav7 = document.createElement("a")
+nav7text = document.createTextNode("Blog"); 
+
+nav7 = nav7.appendChild(nav7text); 
+
+let nav = document.getElementsByTagName("nav")[0];
+
+nav.appendChild(nav7); 
+
+let nav8 = document.createElement("a"); 
+let nav8text = document.createTextNode("Careers"); 
+let nav8Link = nav8.appendChild(nav8text); 
+
+nav.prepend(nav8Link); 
+
+
+
+// task 4 - change color of nav 
+ 
+let navStyle = document.querySelector("nav").style.color = "green"; 
+
+let linksStyle = document.querySelectorAll("a").style.color = "green"; 
