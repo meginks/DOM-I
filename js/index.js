@@ -143,4 +143,5 @@ nav.prepend(nav8Link);
  
 let navStyle = document.querySelector("nav").style.color = "green"; 
 
-let linksStyle = document.querySelectorAll("a").style.color = "green"; 
+let linksStyle = document.getElementsByTagName("a").style.color = "green"; 
+
