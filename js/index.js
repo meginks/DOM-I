@@ -67,14 +67,42 @@ let nav6 = document.getElementsByTagName("a")[5].setAttribute("id", "nav-item-6"
 nav6 = document.getElementById("nav-item-6");
 nav6.textContent = siteContent.nav["nav-item-6"];
 
+// top section 
+
+let topSectionH1 = document.querySelector(".cta .cta-text h1").textContent = siteContent.cta["h1"];
+
 
 // main content 
-let contactHeader = document.querySelector(".contact h4");
 
+let featureH4 = document.querySelectorAll(".text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
+
+let featureTextContent = document.querySelectorAll(".text-content p")[0].textContent = siteContent["main-content"]["features-content"];
+
+let aboutH4 = document.querySelectorAll(".text-content h4")[1].textContent = siteContent["main-content"]["about-h4"]; 
+
+let aboutTextContent = document.querySelectorAll(".text-content p")[1].textContent = siteContent["main-content"]["about-content"]; 
+
+let servicesH4 = document.querySelectorAll(".text-content h4")[2].textContent = siteContent["main-content"]["services-h4"];
+
+let servicesTextContent = document.querySelectorAll(".text-content p")[2].textContent = siteContent["main-content"]["services-content"]; 
+
+let productH4 = document.querySelectorAll(".text-content h4")[3].textContent = siteContent["main-content"]["product-h4"];
+
+let productTextContent = document.querySelectorAll(".text-content p")[3].textContent = siteContent["main-content"]["product-content"]; 
+
+let visionH4 = document.querySelectorAll(".text-content h4")[4].textContent = siteContent["main-content"]["vision-h4"];
+
+let visionTextContent = document.querySelectorAll(".text-content p")[4].textContent = siteContent["main-content"]["vision-content"];
+
+// contact section 
+let contactHeader = document.querySelector(".contact h4");
 contactHeader.textContent = siteContent.contact["contact-h4"]; 
 
+let contactAddress = document.querySelectorAll(".contact p")[0].textContent = siteContent.contact["address"]; 
 
+let contactPhone = document.querySelectorAll(".contact p")[1].textContent = siteContent.contact["phone"];
 
+let contactEmail = document.querySelectorAll(".contact p")[2].textContent = siteContent.contact["email"];
 
 
 //footer 
