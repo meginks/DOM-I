@@ -141,7 +141,10 @@ nav.prepend(nav8Link);
 
 // task 4 - change color of nav 
  
-let navStyle = document.querySelector("nav").style.color = "green"; 
+let navStyles = document.querySelectorAll("nav"); 
 
-let linksStyle = document.getElementsByTagName("a").style.color = "green"; 
+navStyles.forEach(element => element.style.color = "green"); 
 
+let linkStyles = document.querySelectorAll("nav a"); 
+
+linkStyles.forEach(element => element.style.color = "green");
